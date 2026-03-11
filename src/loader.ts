@@ -16,7 +16,7 @@ const pkgDir = resolve(dirname(fileURLToPath(import.meta.url)), '..', 'pkg')
 process.env.PI_PACKAGE_DIR = pkgDir
 process.title = 'gsd'
 
-// GSD_CODING_AGENT_DIR — tells pi's getAgentDir() to return ~/.gsd/agent/ instead of ~/.pi/agent/
+// GSD_CODING_AGENT_DIR — tells pi's getAgentDir() to return ~/.gsd/agent/ instead of ~/.gsd/agent/
 process.env.GSD_CODING_AGENT_DIR = agentDir
 
 // NODE_PATH — make gsd's own node_modules available to extensions loaded via jiti.
